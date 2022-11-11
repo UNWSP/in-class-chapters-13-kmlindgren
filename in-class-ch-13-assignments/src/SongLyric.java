@@ -12,6 +12,8 @@ public class SongLyric {
 			System.out.println(String.format("Notepad file: " + "%, d bytes", notepadBytes));
 			long msBytes = Files.size(msPath);
 			System.out.println(String.format("MS file: " + "%, d bytes", msBytes));
+			double ratio = notepadBytes * 100.00 / msBytes;
+			System.out.println("The .txt file is " + ratio + "% of the .docx file.");
 		} catch(IOException e) {
 			System.out.println("An exception occurred.");
 		}
